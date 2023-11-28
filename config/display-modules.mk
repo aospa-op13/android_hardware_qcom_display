@@ -30,6 +30,7 @@ ifneq ($(TARGET_IS_HEADLESS),true)
                             mapper.qti \
                             libmapperutils \
                             vendor.display.config@2.0.vendor \
+                            init.qti.display_boot.rc \
                             init.qti.display_boot.sh \
                             libfilefinder \
                             vendor.qti.hardware.display.demura-service \
