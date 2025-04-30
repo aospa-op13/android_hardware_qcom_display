@@ -18,7 +18,6 @@ cc_library_shared {
         "common_interface_headers",
         "qti_synx_kernel_headers",
         "qti_display_kernel_headers",
-        "vendor_common_inc",
         "device_kernel_headers",
     ],
 
