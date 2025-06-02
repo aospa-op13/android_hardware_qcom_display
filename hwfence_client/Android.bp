@@ -28,6 +28,7 @@ conditional_cc_library_shared {
         "qti_synx_kernel_headers",
         "qti_display_kernel_headers",
         "device_kernel_headers",
+        "display_debug_headers",
     ],
 
     srcs: [
