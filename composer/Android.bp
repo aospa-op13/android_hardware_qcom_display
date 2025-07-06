@@ -185,7 +185,7 @@ qticomposer3_cc_defaults {
                 ],
                 vintf_fragments: ["vendor.qti.hardware.display.composer-service3_v3.xml"],
             },
-            conditions_default: {
+            v2: {
                 cflags: ["-DCOMPOSER3_V2"],
                 shared_libs: [
                      "android.hardware.graphics.composer3-V2-ndk",
