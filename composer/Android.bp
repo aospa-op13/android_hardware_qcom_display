@@ -205,7 +205,7 @@ qticomposer3_cc_defaults {
                       "vendor.qti.hardware.display.aiqe-V2-ndk",
                 ],
             },
-            conditions_default: {
+            v2: {
                 cflags: ["-DCOMPOSER3_V2"],
                 shared_libs: [
                      "android.hardware.graphics.composer3-V2-ndk",
