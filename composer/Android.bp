@@ -119,8 +119,7 @@ prebuilt_etc {
 prebuilt_etc_xml {
     name: "vendor.qti.hardware.display.composer-service.xml",
     src: select(soong_config_variable("qtidisplay", "composer_version"), {
-        "v3_3": "vendor.qti.hardware.display.composer-service3_v3.xml",
-        default: "vendor.qti.hardware.display.composer-service3_v2.xml",
+        default: "vendor.qti.hardware.display.composer-service3_v3.xml",
     }),
     filename_from_src: true,
     sub_dir: "vintf/manifest",
@@ -195,22 +194,10 @@ soong_config_string_variable {
 
 qticomposer3_cc_defaults {
     name: "composer3_defaults",
-    soong_config_variables: {
-        composer_version: {
-            v3_3: {
-                srcs: ["DisplayAiqeAIDL.cpp"],
-                cflags: ["-DCOMPOSER3_V3"],
-                shared_libs: [
-                      "android.hardware.graphics.composer3-V3-ndk",
-                      "vendor.qti.hardware.display.aiqe-V2-ndk",
-                ],
-            },
-            v2: {
-                cflags: ["-DCOMPOSER3_V2"],
-                shared_libs: [
-                     "android.hardware.graphics.composer3-V2-ndk",
-                ],
-            },
-        },
-    },
+    srcs: ["DisplayAiqeAIDL.cpp"],
+    cflags: ["-DCOMPOSER3_V3"],
+    shared_libs: [
+            "android.hardware.graphics.composer3-V3-ndk",
+            "vendor.qti.hardware.display.aiqe-V2-ndk",
+    ],
 }
