@@ -12,7 +12,8 @@ soong_config_module_type {
         "llvmcov",
         "smmu_proxy",
         "ubwcp_headers",
-        "neo"
+        "neo",
+        "disable_ds_node"
     ],
     properties: [
         "cflags",
@@ -149,6 +150,9 @@ qtidisplay_cc_defaults {
         },
         neo: {
             cflags: ["-DTARGET_INCLUDES_NEO"],
+        },
+        disable_ds_node: {
+            cflags: ["-DDS_MERGE_NODE_UNSUPPORTED"],
         },
         var3 : {
             enabled: false,
