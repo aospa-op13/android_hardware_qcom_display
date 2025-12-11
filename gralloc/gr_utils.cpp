@@ -1003,7 +1003,7 @@ bool IsUBwcPEnabled(int format, uint64_t usage) {
     ALOGD_IF(DEBUG, "UBWCP is not supported for this format: 0x%x \n", format);
     ubwcp_enabled = false;
   }
-  ALOGD_IF(DEBUG, "ubwcp_enabled: %d for this format: 0x%x usage:0x%x \n", ubwcp_enabled, format,
+  ALOGD_IF(DEBUG, "ubwcp_enabled: %d for this format: 0x%x usage:0x%lx \n", ubwcp_enabled, format,
            usage);
   return ubwcp_enabled;
 }
