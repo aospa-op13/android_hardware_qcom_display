@@ -168,11 +168,10 @@ SOONG_CONFIG_qtidisplay := drmpp headless llvmsa \
                            default var1 var2 var3 llvmcov  \
                            composer_version smmu_proxy \
                            ubwcp_headers hwasan mapper_ext \
-                           neo disable_ds_node
+                           neo
 
 # Soong Values
 SOONG_CONFIG_qtidisplay_neo := false
-SOONG_CONFIG_qtidisplay_disable_ds_node := false
 SOONG_CONFIG_qtidisplay_drmpp := true
 SOONG_CONFIG_qtidisplay_headless := false
 SOONG_CONFIG_qtidisplay_llvmsa := false

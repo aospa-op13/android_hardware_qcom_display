@@ -19,7 +19,6 @@ conditional_cc_library_shared {
         integer_overflow: true,
     },
 
-    defaults: ["qtidisplay_common_defaults"],
     vendor: true,
 
     header_libs: [
